@@ -1,0 +1,219 @@
+body {
+    background: #000;
+    .container {
+        width: 50%;
+        height: 100%;
+        background: #f9f4ed;
+        margin: auto;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 20px;
+        position: relative;
+        h3 {
+            font-size: 29px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        a {
+            text-decoration: none;
+        }
+        header {
+            width: 100%;
+            height: 60px;
+            background: #cc6666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left-header {
+                font-size: 29px;
+                width: 20%;
+                height: 100%;
+                line-height: 60px;
+                text-align: center;
+                a {
+                    color: #000; 
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+            .responsive-bar {
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                color: 000;
+                cursor: pointer;
+                &:hover {
+                    color: #fff;
+                }
+            }
+            .responsive-menu {
+                width: 100%;
+                height: 500px;
+                background: #cc6666;
+                position: absolute;
+                z-index: 3;
+                top: -500px;
+                left: 0;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 30px;
+                transition: 0.4s ease-in-out;
+                div {
+                    box-sizing: border-box;
+                    width: 50%;
+                    height: 50%;
+                    border: 2px solid #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    transition: 0.4s ease-in-out;
+                    a {
+                        color: #fff;
+                    }
+                    i {
+                        font-size: 70px;
+                        margin-bottom: 10px;
+                    }
+                    &:hover a {
+                        color: #cc6666;
+                    }
+                    &:hover {
+                        border: 10px solid #cc6666;
+                        background: #fff;
+                        transform: scale(1.1);
+                        box-shadow: 5px 5px 10px #000;
+                    }
+                }
+                
+            }
+        }        
+        main {
+            width: 100%;
+            height: 100%;
+            .main-skill {
+                padding: 20px;
+                .skills {
+                    width: 90%;
+                    height: 30px;
+                    margin: 10px auto;
+                    padding: 5px 10px;
+                    border: 1px solid #000;
+                    border-radius: 10px;
+                    background: #cc6666;
+                    color: #fff;
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    transition: 0.4s ease-in-out;
+                    .skill-name {
+                        width: 100px;
+                        line-height: 30px;
+                        padding-right: 5px;
+                    }
+                    .skill-value {
+                        width: 50px;
+                        text-align: right;
+                        line-height: 30px;
+                    }
+                    .skill-percent {
+                        height: 20px;
+                        margin: 5px auto;
+                        width: calc(100% - 150px);
+                        border: 1px solid #555;
+                        border-radius: 10px;
+                        background: #000;
+                        z-index: 2;
+                        position: relative;
+                        .progress {
+                            position: absolute;
+                            left: 4px;
+                            top: 4px;
+                            height: 60%;
+                            
+                            background: linear-gradient( 135deg, #EE9CA7 50%, #FFDDE1 100%);
+                            border-radius: 10px;
+                            animation: animate 2s ease-in-out forwards;
+                            box-shadow:  2px 2px 5px #222;
+                        }
+                    }
+                    .skill-description {
+                        position: absolute;
+                        top: 0px;
+                        margin: auto;        
+                        color: #fff;
+                        background: #555;
+                        padding: 10px;
+                        width: 90%;
+                        border-radius: 10px;
+                        display: none;
+                        font-size: 16px;
+                    }
+                }
+                &:hover .skills {
+                    opacity: 0.6;
+                }
+                &:hover .skill-description {
+                    display: none;
+                }
+                .skills:hover {
+                    opacity: 1;
+                    transform: scale(1.1);
+                    margin-bottom: 75px;
+                }
+                .skills:hover .skill-description {
+                    display: block;
+                    transform: translateY(50px);
+                } 
+            }
+        }
+        footer {
+            .footer-link {
+                text-align: center;
+                padding: 100px 0 100px;
+                ul {
+                    li {
+                        padding-bottom: 10px;
+                        a {
+                            color: #555;
+                            transition: 0.4s ease-in-out;
+                                &:hover {
+                                    color: #cc6666;
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slide-in {
+        transform: translateY(560px);
+    }
+    @media screen and (max-width: 768px) {
+        .container {
+            width: 80%;
+            header {
+                .right-header {
+                    display: none;
+                }
+                
+            } 
+        }
+                 
+    }
+    @media screen and (max-width: 540px) {
+        .container {
+            width: 100%;
+        }         
+    }
+    @keyframes animate {
+        from
+        {
+            width: 0;
+        }
+    }
+}
+
