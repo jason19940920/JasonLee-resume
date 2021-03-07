@@ -1,0 +1,328 @@
+body {
+  background: #000;
+}
+
+body .container {
+  width: 50%;
+  background: #f9f4ed;
+  margin: auto;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+
+body .container h3 {
+  font-size: 29px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+body .container a {
+  text-decoration: none;
+}
+
+body .container header {
+  width: 100%;
+  height: 60px;
+  background: #cc6666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+  color: #000;
+}
+
+body .container header .left-header {
+  font-size: 29px;
+  width: 20%;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+}
+
+body .container header .left-header a {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  color: #000;
+}
+
+body .container header .left-header a:hover {
+  color: #fff;
+}
+
+body .container header .responsive-bar {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+body .container header .responsive-bar:hover {
+  color: #fff;
+}
+
+body .container header .responsive-menu {
+  width: 100%;
+  height: 500px;
+  background: #cc6666;
+  position: absolute;
+  z-index: 3;
+  top: -500px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 30px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+body .container header .responsive-menu div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+  border: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+body .container header .responsive-menu div a {
+  color: #fff;
+}
+
+body .container header .responsive-menu div i {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+body .container header .responsive-menu div:hover a {
+  color: #cc6666;
+}
+
+body .container header .responsive-menu div:hover {
+  border: 10px solid #cc6666;
+  background: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+}
+
+body .container main {
+  font-size: 16px;
+  width: 100%;
+}
+
+body .container main h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+body .container main h4 span {
+  padding-left: 10px;
+  position: relative;
+}
+
+body .container main h4 span::before {
+  content: "";
+  width: 1px;
+  height: 20px;
+  background: #555;
+  position: absolute;
+  top: 7px;
+  left: 5px;
+}
+
+body .container main .input {
+  width: 80%;
+  margin: 40px auto;
+  border-bottom: none !important;
+  position: relative;
+}
+
+body .container main .input input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  padding: 5px 10px;
+  border: none;
+  background: none;
+  border-bottom: 3px solid #555;
+  color: #555;
+  font-weight: 700;
+}
+
+body .container main .input i {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  cursor: pointer;
+  padding-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+body .container main .input i:hover {
+  color: #cc6666;
+}
+
+body .container main .input .arrow {
+  width: 30px;
+  height: 60px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #cc6666;
+  overflow: hidden;
+  position: absolute;
+  left: 98%;
+  right: 30px;
+  top: 60px;
+}
+
+body .container main .input .arrow i {
+  font-size: 40px;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  -webkit-animation: click-me 1s infinite;
+          animation: click-me 1s infinite;
+  z-index: -10;
+}
+
+body .container main .input span {
+  position: absolute;
+  right: -20px;
+  top: 30px;
+  color: #cc6666;
+}
+
+body .container main .introduce {
+  width: 80%;
+  margin: auto;
+  line-height: 1.2;
+  opacity: 0;
+  -webkit-transition: 1.2s ease-in-out;
+  transition: 1.2s ease-in-out;
+}
+
+body .container main .introduce .image {
+  background: url("../img/introduce.jpg") center center;
+  background-repeat: no-repeat;
+  max-width: 300px;
+  height: 400px;
+  margin: 0 auto 20px;
+  border: 5px solid #cc6666;
+}
+
+body .container main .introduce div {
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #cc6666;
+}
+
+body .container footer {
+  opacity: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+body .container footer .footer-link {
+  text-align: center;
+  padding: 20px 0;
+}
+
+body .container footer .footer-link ul li {
+  padding-bottom: 10px;
+}
+
+body .container footer .footer-link ul li a {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  color: #555;
+}
+
+body .container footer .footer-link ul li a:hover {
+  color: #cc6666;
+}
+
+body .slide-in {
+  -webkit-transform: translateY(560px);
+          transform: translateY(560px);
+}
+
+@media screen and (max-width: 768px) {
+  body .container {
+    width: 80%;
+  }
+  body .container header .right-header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body .container {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes animate {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes animate {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes click-me {
+  0% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes click-me {
+  0% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/*# sourceMappingURL=introduce.css.map */
