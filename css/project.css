@@ -1,0 +1,287 @@
+body {
+  background: #000;
+}
+
+body .container {
+  width: 50%;
+  height: 100%;
+  background: #f9f4ed;
+  margin: auto;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+
+body .container h3 {
+  font-size: 29px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+body .container a {
+  text-decoration: none;
+}
+
+body .container header {
+  width: 100%;
+  height: 60px;
+  background: #cc6666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+  color: #000;
+}
+
+body .container header .left-header {
+  font-size: 29px;
+  width: 20%;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+}
+
+body .container header .left-header a {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  color: #000;
+}
+
+body .container header .left-header a:hover {
+  color: #fff;
+}
+
+body .container header .responsive-bar {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+body .container header .responsive-bar:hover {
+  color: #fff;
+}
+
+body .container header .responsive-menu {
+  width: 100%;
+  height: 500px;
+  background: #cc6666;
+  position: absolute;
+  z-index: 3;
+  top: -500px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 30px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+body .container header .responsive-menu div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+  border: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+body .container header .responsive-menu div a {
+  color: #fff;
+}
+
+body .container header .responsive-menu div i {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+body .container header .responsive-menu div:hover a {
+  color: #cc6666;
+}
+
+body .container header .responsive-menu div:hover {
+  border: 10px solid #cc6666;
+  background: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+}
+
+body .container main {
+  width: 100%;
+  height: 430px;
+  margin-bottom: 400px;
+}
+
+body .container main .carousel {
+  height: 100%;
+  padding-bottom: 700px;
+  margin-top: -100px;
+}
+
+body .container main .carousel .indicators {
+  margin-bottom: -20px;
+}
+
+body .container main .carousel .indicators .indicator-item {
+  border: 1px solid #000;
+}
+
+body .container main .carousel .indicators .active {
+  background: #000;
+}
+
+body .container main .carousel .carousel-item {
+  width: 350px;
+  height: 200px;
+  margin: auto;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+}
+
+body .container main .carousel .carousel-item .project-image {
+  width: 100%;
+  height: 100%;
+}
+
+body .container main .carousel .carousel-item .project-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #cc6666;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 10px 10px;
+  margin-top: 10px;
+  -webkit-box-shadow: 2px 2px 4px #000;
+          box-shadow: 2px 2px 4px #000;
+}
+
+body .container main .carousel .carousel-item .project-text p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+body .container main .carousel .carousel-item .project-text button {
+  border: none;
+  background: #fff;
+  color: #e6e6e6 !important;
+  font-weight: 500;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+body .container main .carousel .carousel-item .project-text button:hover {
+  color: #fff !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border: 2px solid #fff;
+}
+
+body .container main .carousel .carousel-item .project-text button a {
+  color: #cc6666;
+}
+
+body .container main .carousel .carousel-item .project-text button:hover a {
+  color: #fff;
+}
+
+body .container footer .footer-link {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+body .container footer .footer-link ul li {
+  padding-bottom: 10px;
+}
+
+body .container footer .footer-link ul li a {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  color: #555;
+}
+
+body .container footer .footer-link ul li a:hover {
+  color: #cc6666;
+}
+
+body .slide-in {
+  -webkit-transform: translateY(560px);
+          transform: translateY(560px);
+}
+
+@media screen and (max-width: 768px) {
+  body .container {
+    width: 80%;
+  }
+  body .container header .right-header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body .container {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes animate {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes animate {
+  from {
+    width: 0;
+  }
+}
+/*# sourceMappingURL=project.css.map */
